@@ -1,0 +1,67 @@
+/* css reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global style */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DA0037;
+}
+
+/* edit header */
+header {
+    background-color: #171717;
+    color: #EDEDED;
+    padding: 20px 100px;
+    display: inline-block;
+    width: inherit;
+}
+
+header h1 {
+    float: left;
+}
+
+/* edit navigasi */
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding: 9.5px;
+}
+
+nav li {
+    display: inline;
+    padding: 0 10px;
+}
+
+/* main */
+
+main .slider {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20px 50px 20px;
+}
