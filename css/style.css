@@ -1,0 +1,63 @@
+/* Css Reset */
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+  }
+
+  /* Global style */
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+  }
+  
+  li  {
+      list-style: none;
+      text-align: right;
+      float: right;
+      display: inline;
+      padding: 10px;
+  }
+
+  a {
+      text-decoration: none;
+      color: #000;
+  }
+  
+  main {
+      margin: 100px;
+  }
+
+  section {
+      min-height: 90vh;
+  }
+
+  a:hover {
+      color: #dddd;
+  }
+
+  /* Header */
+  header {
+    padding: 20px 100px;
+    display: inline-block;
+    width: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+
+  header h1 {
+      float: left;
+  }
+
+  /* main */
+
+  main img {
+      padding: 30px;
+      border: 1px solid;
+  }
+
+  
