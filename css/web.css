@@ -1,0 +1,17 @@
+body {
+    background:wheat;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+
+header h1 {
+    float: left;
+}
