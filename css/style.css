@@ -1,0 +1,88 @@
+/* Global Stules */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url();
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+section {
+    margin: 100px auto;
+}
+
+/* HEADER AREA */
+
+header {
+    background: rgb(4, 25, 92);
+    height: 60px;
+    padding: 0 30px;
+}
+
+header ul {
+    float: right;
+}
+
+header h1 {
+    float: left;
+    line-height: 60px;
+}
+
+header li {
+    display: inline;
+    line-height: 60px;
+    margin-left: 15px;
+}
+
+div,
+h2 {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+/* BANNER AREA */
+
+section {
+    margin: 100px auto;
+}
+
+
+
+section p {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(73, 31, 42);
+    margin: auto;
+    padding: 10px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.about-area h3 {
+    width: 135px;
+    height: 45px;
+    font-size: large;
+    
+}
+
+/* FOOTER AREA */
+
+footer {
+    border: 5px solid rgb(49, 102, 248);
+    background-color: rgb(49, 102, 248);
+}
