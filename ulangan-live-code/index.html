@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ulangan<title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https//fonsts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.main.css">
+    </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/kosong"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclik="hideMenu()"></i>
+                <ul>
+                     <li><a href=""></a>HOME</a></li>
+                     <li><a href=""></a>ABOUT</a></li>
+                     <li><a href=""></a>COURSE</a></li>
+                     <li><a href=""></a>BLOG</a></li>
+                     <li><a href=""></a>CONTAC</a></li>
+                </ul>
+         </div>
+                <i class="fa fa-bars" onclik="showMenu()"></i>
+        </nav>
+        <div class="text-box"></div>
+        <h1>Ulangan Live Coding</h1>
+        <p>Ulangan dengan pemogramman html,css dan javascrypt untuk smk satrada. Dengan
+        keahlian siswa dan siswi smk strada jakarta. </p>
+        <a href="" class="hero-btn">"Visit Us To know More"</a>
+        </div>
+    </section>
+
+    <!------ Course ------>
+
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+          <div class="course-col">
+           <h3>Intermediate</h3>
+           <p>berisiskan kata</p>
+           <div class="course-col">
+            <h3>Degree</h3>
+            <p>berisiskan kata</p>
+         </div>
+         <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>berisiskan kata</p>
+         </div>
+        </div>
+    </section>
+    <!------ campus ------>
+<section class="campus">
+   <h1>Campus</h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   <div class="row">
+       <div src="campus-col">
+           <img src="images/kosong">
+   </div>
+</section>
+<!------JavaScrypt for Togle Menu------>
+<script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            
+        }
+</script>
+</body>
+</html>
