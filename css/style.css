@@ -7,6 +7,9 @@
 }
 
 /* global style */
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -30,16 +33,38 @@ a:hover {
     color: #DA0037;
 }
 
+.wrapper {
+    display: flex;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.product, .testimoni, .contact {
+    padding: 100px;
+}
+
+.judul {
+    font-size: 32px;
+}
+
 /* edit header */
 header {
     background-color: #171717;
     color: #EDEDED;
     padding: 20px 100px;
     display: inline-block;
+    position: fixed;
     width: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
-header h1 {
+header .logo {
+    width: 50px;
     float: left;
 }
 
@@ -50,7 +75,7 @@ nav {
 }
 
 nav ul {
-    padding: 9.5px;
+    padding: 15px 9px 0 9px;
 }
 
 nav li {
@@ -58,10 +83,202 @@ nav li {
     padding: 0 10px;
 }
 
-/* main */
+/* scroll color animation */
+nav ul li.active a{
+    color: #DA0037;
+}
 
-main .slider {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 20px 50px 20px;
+/* banner */
+.banner {
+    margin-top: 30px;
+}
+
+.banner .slider-items img {
+    height: 95vh;
+    object-fit: cover;
+}
+
+.slider{
+	position: relative;
+	overflow: hidden;
+}
+
+
+.wrapper {
+	justify-content: center;
+}
+
+.slider .left-slide .fa-arrow-alt-circle-left{
+  position: absolute;
+  align-self: center;
+  font-size: 64px;
+  cursor: pointer;
+  top: 454px;
+  left: 70px;
+}
+
+.item h1 {
+	position: absolute;
+    font-size: 64px;
+    padding-left: 389px;
+    padding-top: 450px;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(237, 237, 237, 0.2);
+}
+
+.slider .right-slide .fa-arrow-alt-circle-right {
+	position: absolute;
+	align-self: center;
+    font-size: 64px;
+    cursor: pointer;
+	top: 454px;
+    right: 70px;
+}
+
+.slider .slider-items .item img{
+	width: 100%;
+	display: block;
+}
+
+.slider .slider-items .item{
+	display: none;
+	position: relative;
+}
+
+.slider .slider-items .item.active{
+	display: block;
+}
+
+.slider .background {
+    background-color: rgba(23, 23, 23, 0.8);
+}
+
+/* product */
+.product .wrapper {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product .card {
+    width: 23%;
+    margin-top: 50px;
+    object-fit: cover;
+    border: 2px solid #444444;
+}
+
+.card p {
+    padding-bottom: 80px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.card .p-title {
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.card .buy {
+    padding: 10px 30px;
+    margin: 0 0 10px 80px;
+    color: #EDEDED;
+    background-color: #444444;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.card .buy a:hover {
+    color: #EDEDED;
+}
+
+/* testimonial */
+.testimoni {
+    background-color: #171717;
+    height: 150vh;
+}
+
+.testimoni .wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimoni .t-box {
+    background-color: #EDEDED;
+    width: 300px;
+    height: 500px;
+    padding: 10px 30px;
+    border: 1px solid #444444;
+}
+
+.t-box .wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+.t-text {
+    padding-top: 20px;
+    text-align: center;
+    color: #171717;
+    font-weight: 500;
+}
+
+.t-text p {
+    color: #444444;
+    padding-top: 10px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.testimoni .t-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    /* filter: grayscale(100%); */
+}
+
+/* bikin contact */
+.contact {
+    background: url(../assets/denise-jans-uIemlFWQSC4-unsplash.jpg) rgba(23, 23, 23, 0.8);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.contact .judul {
+    color: #EDEDED;
+}
+
+.contact h3 {
+    font-size: 24px;
+    color: #EDEDED;
+    font-weight: 500;
+}
+
+.contact button {
+    background-color: #EDEDED;
+    border: none;
+    color: #171717;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact button:first-of-type {
+    margin-right: 20px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #171717;
+    color: #EDEDED;
+    height: 25px;
+    line-height: 25px;
 }
